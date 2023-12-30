@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Company Name</title>
+    <!-- Link to Tailwind CSS stylesheet -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- Navbar section -->
+    <nav class="flex items-center justify-between flex-wrap bg-gray-800 p-6">
+      <!-- Company name section -->
+      <div class="flex items-center flex-shrink-0 text-white mr-6">
+        <span class="font-semibold text-xl tracking-tight"
+          >Random Company Name</span
+        >
+      </div>
+      <!-- Navbar toggle button section -->
+      <div class="block lg:hidden">
+        <button
+          class="flex items-center px-3 py-2 border rounded text-gray-200 border-gray-400 hover:text-white hover:border-white"
+          id="navbar-toggle"
+        >
+          <svg
+            class="fill-current h-3 w-3"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>Menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          </svg>
+        </button>
+      </div>
+      <!-- Navbar links section -->
+      <div
+        class="w-full block flex-grow lg:flex lg:items-center lg:w-auto"
+        id="navbar-links"
+      >
+        <div class="text-sm lg:flex-grow">
+          <a
+            href="#home"
+            class="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white mr-4"
+            >Home</a
+          >
+          <a
+            href="#about"
+            class="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white mr-4"
+            >About</a
+          >
+          <a
+            href="#blog"
+            class="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white mr-4"
+            >Blog</a
+          >
+          <a
+            href="#settings"
+            class="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white"
+            >Settings</a
+          >
+        </div>
+      </div>
+    </nav>
+    <!-- JavaScript code for navbar toggle button -->
+    <script>
+      const navbarToggle = document.getElementById("navbar-toggle");
+      const navbarLinks = document.getElementById("navbar-links");
+      navbarToggle.addEventListener("click", () => {
+        navbarLinks.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>

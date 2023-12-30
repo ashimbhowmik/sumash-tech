@@ -1,0 +1,74 @@
+.bg-color1 {
+  background-color: #d4d4d4;
+}
+.color1 {
+  filter: invert(98%) sepia(13%) saturate(589%) hue-rotate(237deg)
+    brightness(120%) contrast(100%);
+}
+
+.bg-slate {
+  background-color: #404956;
+}
+.color2 {
+  color: #118b91;
+}
+.color3 {
+  background-color: #f16a4f;
+}
+.empty-div4 {
+  width: 35px;
+  height: 35px;
+  background-color: #d9d9d9;
+  border-radius: 100%;
+}
+.empty-div1 {
+  width: 35px;
+  height: 35px;
+  background-color: #118b91;
+  border-radius: 100%;
+}
+
+.color5 {
+  background-color: #f16a4f;
+}
+
+.empty-div2 {
+  width: 35px;
+  height: 35px;
+  background-color: #f16a4f;
+  border-radius: 100%;
+}
+.empty-div3 {
+  width: 35px;
+  height: 35px;
+  background-color: #404956;
+  border-radius: 100%;
+}
+.font {
+  font-family: "Samsung Sharp Sans Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Samsung Sharp Sans Regular"),
+    url("samsungsharpsans.woff") format("woff");
+}
+
+.container1 {
+  margin: 0 auto;
+}
+.color4 {
+  background-color: #f4f4f4;
+}
+.bg-img {
+  background-image: url(bannar2.png);
+  height: 800px;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 688px) {
+  .bg-img {
+    background-image: url(bannar3.png);
+    height: 600px;
+    background-repeat: no-repeat;
+  }
+}
